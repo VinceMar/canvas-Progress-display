@@ -1,4 +1,8 @@
-
+/**
+ * @param {Object} canvas_w	画布宽度
+ * @param {Object} canvas_h 画布高度
+ * @param {Object} r 圆点半径
+ */
 function draw(canvas_w,canvas_h,r) {
 	var c = document.getElementById("cvs"); //初始化
 	var ctx = c.getContext("2d");
@@ -25,66 +29,42 @@ function draw(canvas_w,canvas_h,r) {
 	var lists = [{
 			"status": "0",
 			"names": [{
-					"name": "a1处置报告",
+					"name": "处置报告",
 					"url": "https://www.baidu.com"
 				},
 				{
-					"name": "a2立项报告",
+					"name": "立项报告",
 					"url": "https://www.google.com"
 				},
 				{
-					"name": "a3",
+					"name": "报告",
 					"url": "https://www.taobao.com"
 				}
 			]
 		},
 		{
 			"status": "1",
-			"names": [{
-					"name": "",
-					"url": "https://www.baidu.com"
-				},
-				{
-					"name": "",
-					"url": "https://www.google.com"
-				},
-				{
-					"name": "",
-					"url": "https://www.taobao.com"
-				}
-			]
+			"names": []
 		},
 		{
 			"status": "2",
 			"names": [{
-					"name": "c1",
+					"name": "测",
 					"url": "https://www.baidu.com"
 				},
 				{
-					"name": "c2",
+					"name": "测试测",
 					"url": "https://www.google.com"
 				},
 				{
-					"name": "c3",
+					"name": "测试测试测试",
 					"url": "https://www.taobao.com"
 				}
 			]
 		},
 		{
 			"status":"2",
-			"names":[{
-				"name":"d1",
-				"url": "https://www.baidu.com"
-			},
-			{
-				"name": "d2",
-				"url": "https://www.google.com"
-			},
-			{
-				"name": "d3",
-				"url": "https://www.taobao.com"
-			}
-			]
+			"names":[]
 		}
 		,
 		{
@@ -198,10 +178,6 @@ function draw(canvas_w,canvas_h,r) {
 			{
 				"name": "d2",
 				"url": "https://www.google.com"
-			},
-			{
-				"name": "d3",
-				"url": "https://www.taobao.com"
 			}
 			]
 		}
@@ -245,7 +221,7 @@ function draw(canvas_w,canvas_h,r) {
 			position.push({
 				x1: temp_tx,	//左
 				y1: temp_ty - 10,	//上
-				x2: temp_tx + (lists[i].names[j].name.length*10),	//右
+				x2: temp_tx + (lists[i].names[j].name.length*font_size),	//右
 				y2: temp_ty,	//下
 				url: lists[i].names[j].url	//存入对应URL
 			});
