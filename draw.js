@@ -25,7 +25,6 @@ function draw(canvas_w,canvas_h,r) {
 	var ty = y - 20; //第一个圆的上方文字的垂直位置
 	var line_height = 20; //行间距
 	
-	
 	var lists = [{
 			"status": "0",
 			"names": [{
@@ -272,5 +271,5 @@ function draw(canvas_w,canvas_h,r) {
 	
 }
 
-//宽，高，园半径
+//宽，高，圆半径
 draw(600,300,5);
