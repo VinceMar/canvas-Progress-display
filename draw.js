@@ -199,12 +199,15 @@ function draw(canvas_w,canvas_h,r) {
 		switch (lists[i].status) {
 			case "0": //未完成-灰色
 				ctx.fillStyle = "#95a5a6";
+				// ctx.strokeStyle = "#95a5a6";
 				break;
 			case "1": //进行中-黄色
 				ctx.fillStyle = "yellow";
+				// ctx.strokeStyle = "yellow";
 				break;
 			case "2": //已完成-绿色
 				ctx.fillStyle = "#2ecc71";
+				// ctx.strokeStyle = "#2ecc71";
 				break;
 		}
 		ctx.fill();
